@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f9f7fb, #eff1f4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        /* Checkbox alignment */
+        .terms {
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+        }
+
+        .terms input {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #2575fc;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #1a5ed8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>User Registration Form</h2>
+
+    <form id="registerForm">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number"
+               pattern="[0-9]{10}" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password"
+               minlength="6" required>
+
+        <label>Choose Profile Picture</label>
+        <input type="file" accept="image/*" required>
+
+        <!-- Checkbox -->
+        <div class="terms">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I accept the Terms & Conditions</label>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function () {
+        alert("Registration Successful!");
+    });
+</script>
+
+</body>
+</html>
