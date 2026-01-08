@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+h1 {
+    background-color: #444444;
+    color: white;
+    padding: 15px;
+}
+
+.container {
+    width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+form input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #343435;
+    color: white;
+    border: none;
+    cursor: pointer;
+}   
+
+form button:hover {
+    background-color: #2f2e30;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #eee;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+}

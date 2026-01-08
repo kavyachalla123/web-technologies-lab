@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #1a5ed8;
+}
+
+.media-section {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #333;
+}
+
+audio, video {
+    margin-top: 15px;
+}
+
+p {
+    font-weight: bold;
+    margin-top: 10px;
+}
