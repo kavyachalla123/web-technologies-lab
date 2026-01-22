@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Stage Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>🧾 Multi-Stage Registration Form</h2>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <form id="multiForm">
+
+        <!-- Stage 1 -->
+        <div class="stage active">
+            <h3>Stage 1: Personal Information</h3>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="number" id="age" placeholder="Age">
+            <p class="error"></p>
+            <button type="button" onclick="nextStage()">Next</button>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="stage">
+            <h3>Stage 2: Account Details</h3>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <p class="error"></p>
+            <button type="button" onclick="prevStage()">Back</button>
+            <button type="button" onclick="nextStage()">Next</button>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="stage">
+            <h3>Stage 3: Preferences</h3>
+            <label><input type="checkbox" value="News"> News</label>
+            <label><input type="checkbox" value="Updates"> Updates</label>
+            <label><input type="checkbox" value="Offers"> Offers</label>
+            <p class="error"></p>
+            <button type="button" onclick="prevStage()">Back</button>
+            <button type="button" onclick="nextStage()">Next</button>
+        </div>
+
+        <!-- Stage 4 -->
+        <div class="stage">
+            <h3>Stage 4: Review & Submit</h3>
+            <div id="review"></div>
+            <button type="button" onclick="prevStage()">Back</button>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+    <p class="success" id="successMsg"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
