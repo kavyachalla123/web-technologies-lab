@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adaptive Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-card">
+    <h2>📝 User Registration</h2>
+    <p class="subtitle">Dynamic validation based on role</p>
+
+    <form id="registerForm" novalidate>
+
+        <div class="field">
+            <label>Full Name</label>
+            <input type="text" id="name">
+            <small></small>
+        </div>
+
+        <div class="field">
+            <label>Email Address</label>
+            <input type="email" id="email">
+            <small></small>
+        </div>
+
+        <div class="field">
+            <label>Password</label>
+            <input type="password" id="password">
+            <small></small>
+        </div>
+
+        <div class="field">
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword">
+            <small></small>
+        </div>
+
+        <div class="field">
+            <label>Age</label>
+            <input type="number" id="age">
+            <small></small>
+        </div>
+
+        <div class="field">
+            <label>Role</label>
+            <select id="role">
+                <option value="">Select Role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="admin">Admin</option>
+            </select>
+            <small></small>
+        </div>
+
+        <div class="field" id="skillsField">
+            <label>Skills</label>
+            <input type="text" id="skills" placeholder="HTML, CSS, Java">
+            <small></small>
+        </div>
+
+        <button type="submit">Register</button>
+        <p class="success" id="successMsg"></p>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

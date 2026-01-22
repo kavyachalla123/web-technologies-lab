@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #282b2d, #2a2e2e);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-card {
+    background: white;
+    width: 420px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, select {
+    width: 100%;
+    padding: 9px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #242629;
+}
+
+.field.error input,
+.field.error select {
+    border-color: red;
+}
+
+.field.success input,
+.field.success select {
+    border-color: green;
+}
+
+small {
+    color: red;
+    visibility: hidden;
+}
+
+.field.error small {
+    visibility: visible;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #212325;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #007bff;
+}
+
+.success {
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+}
