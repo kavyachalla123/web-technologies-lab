@@ -1,0 +1,12 @@
+{
+  "products": [
+    { "name": "Wireless Headphones", "price": 1999, "category": "Electronics" },
+    { "name": "Smart Watch", "price": 3499, "category": "Electronics" },
+    { "name": "Bluetooth Speaker", "price": 1499, "category": "Electronics" },
+    { "name": "Running Shoes", "price": 2599, "category": "Fashion" },
+    { "name": "Backpack", "price": 899, "category": "Accessories" },
+    { "name": "Gaming Mouse", "price": 1299, "category": "Electronics" },
+    { "name": "Water Bottle", "price": 299, "category": "Home" },
+    { "name": "Notebook Set", "price": 199, "category": "Stationery" }
+  ]
+}
